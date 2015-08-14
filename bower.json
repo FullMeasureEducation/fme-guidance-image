@@ -1,0 +1,25 @@
+{
+  "name": "fme-guidance-image",
+  "main": "fme-guidance-image.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/fme-samuelbirk/fme-guidance-image",
+  "authors": [
+    "fme-samuelbirk <sam@fullmeasureed.com>"
+  ],
+  "description": "A simple angular directive for sorting a list with html5 drag and drop",
+  "keywords": [
+    "guidance-image",
+    "list",
+    "drag",
+    "and",
+    "drop",
+    "html5",
+    "angularjs"
+  ],
+  "dependencies": {
+    "jquery": "2.1",
+    "angular": "1.3.16",
+    "angular-mocks": "1.3.16"
+  },
+  "license": "MIT"
+}
