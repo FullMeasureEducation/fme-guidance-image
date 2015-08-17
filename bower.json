@@ -1,7 +1,7 @@
 {
   "name": "fme-guidance-image",
   "main": "fme-guidance-image.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/FullMeasureEducation/fme-guidance-image.git",
   "authors": [
     "fme-samuelbirk <sam@fullmeasureed.com>"
