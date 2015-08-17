@@ -2,11 +2,11 @@
   "name": "fme-guidance-image",
   "main": "fme-guidance-image.js",
   "version": "1.0.0",
-  "homepage": "https://github.com/fme-samuelbirk/fme-guidance-image",
+  "homepage": "https://github.com/FullMeasureEducation/fme-guidance-image.git",
   "authors": [
     "fme-samuelbirk <sam@fullmeasureed.com>"
   ],
-  "description": "A simple angular directive for sorting a list with html5 drag and drop",
+  "description": "A simple angular directive for displaying thumbnail images and lightboxes",
   "keywords": [
     "guidance-image",
     "list",
@@ -18,8 +18,16 @@
   ],
   "dependencies": {
     "jquery": "2.1",
-    "angular": "1.3.16",
-    "angular-mocks": "1.3.16"
+    "bootstrap": "3.1",
+    "angular": "*",
+    "angular-mocks": "*"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

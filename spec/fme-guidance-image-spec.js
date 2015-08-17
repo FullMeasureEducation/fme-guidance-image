@@ -5,16 +5,27 @@
       this.timeout = $timeout;
       this.scope = $rootScope.$new();
       this.compile = $compile;
-      this.element = angular.element("<div fme-guidance-image='true'  src='test-location'> </div>");
-      this.compile(this.element)(this.scope);
-      return this.scope.$digest();
+      this.element = angular.element("<div fme-guidance-image='true'  src='abc://test-location/thumb_IMG_0141.jpg'> </div>");
+      this.el = this.compile(this.element)(this.scope);
+      this.scope.$digest();
+      return this.isolateScope = this.el.isolateScope;
     }));
-    afterEach(function() {
-      return this.element.remove();
-    });
     return describe('element creation', function() {
-      return it('gets created', function() {
-        return expect(this.scope.src).to.eq('test-location');
+      it('sets the scope src attribute from the src attribute on the directive element', function() {
+        expect(this.el.scope().$$childHead.src).to.eq('abc://test-location/thumb_IMG_0141.jpg');
+        return this.element.remove();
+      });
+      it('sets the scope thumb_image attribute from the src attribute on the directive element', function() {
+        expect(this.el.scope().$$childHead.thumb_image).to.eq('abc://test-location/thumb_IMG_0141.jpg');
+        return this.element.remove();
+      });
+      it('sets the scope large_image attribute from the src attribute WITHOUT THE _thumb substring on the directive element', function() {
+        expect(this.el.scope().$$childHead.large_image).to.eq('abc://test-location/IMG_0141.jpg');
+        return this.element.remove();
+      });
+      return it('sets the scope modal_image_id attribute from the image name from the src attribute', function() {
+        expect(this.el.scope().$$childHead.image_modal_id).to.eq('thumb_IMG_0141');
+        return this.element.remove();
       });
     });
   });
