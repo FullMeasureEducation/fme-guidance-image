@@ -21,6 +21,16 @@ angular.module('your-app',['fme-guidance-image'])
 #Usage
 Add the directive to an ng-repeat passing the list and index to the direct
 ```html
+<!-- place the following anywhere you want the directive to take effect. The id is important. It must be set to id="guidance-image-modal" -->
+<div class='modal' id='guidance-image-modal'>
+      <div class='modal-dialog modal-lg'>
+        <div class='modal-content'>
+          <div class='modal-body' style='margin:0px; padding:0px;'>
+            <img id='full-size-image' width='100%' src=''/>
+          </div>
+        </div>
+      </div>
+    </div>
 <div fme-guidance-image='true' src="https://fmes3.s3.amazonaws.com/development/uploads/screwdriver/user_upload/image/3/thumb_IMG_0094.jpg">
     </div>
 ```
