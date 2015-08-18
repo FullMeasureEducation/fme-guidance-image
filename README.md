@@ -1,14 +1,14 @@
-# fme-sortable
-A simple html5/angularjs directive for sorting lists via drag and drop
+# fme-guidance-image
+A simple html5/angularjs directive for displaying guidance images
 
 Tested with karma/chai/sinon
 #Install
 ```
-bower install fme-sortable
+bower install fme-guidance-image
 ```
 Inject the module into your angular app
 ```js
-angular.module('your-app',['fme-sortable'])
+angular.module('your-app',['fme-guidance-image'])
 ```
 #Developer Info
 - git hooks do not git pushed to github
@@ -21,41 +21,8 @@ angular.module('your-app',['fme-sortable'])
 #Usage
 Add the directive to an ng-repeat passing the list and index to the direct
 ```html
-<ul>
-  <li fme-sortable fme-list='list' 
-      fme-index='$index' 
-      ng-repeat='item in list'>
-      {{list.name}}
-  </li>
-</ul>
-```
-
-#Additional Options
-##fme-on-drop
-Callback triggered after dropping the item
-```html
-<ul>
-  <li fme-sortable 
-      fme-list='list' 
-      fme-index='$index' 
-      fme-on-drop='myOnDropFunction()'
-      ng-repeat='item in list'>
-      {{list.name}}
-  </li>
-</ul>
-```
-##fme-not-sortable
-Callback triggered after dropping the item
-```html
-<ul>
-  <li fme-sortable 
-      fme-list='list' 
-      fme-index='$index' 
-      fme-not-sortable='myFunctionToDetermineIfThingsAreNotSortable()' 
-      ng-repeat='item in list'>
-      {{list.name}}
-  </li>
-</ul>
+<div fme-guidance-image='true' src="https://fmes3.s3.amazonaws.com/development/uploads/screwdriver/user_upload/image/3/thumb_IMG_0094.jpg">
+    </div>
 ```
 
 ##Run the tests locally

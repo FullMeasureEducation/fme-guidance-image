@@ -9,10 +9,8 @@
   "description": "A simple angular directive for displaying thumbnail images and lightboxes",
   "keywords": [
     "guidance-image",
-    "list",
-    "drag",
-    "and",
-    "drop",
+    "image",
+    "display",
     "html5",
     "angularjs"
   ],
