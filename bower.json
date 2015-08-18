@@ -1,7 +1,7 @@
 {
   "name": "fme-guidance-image",
   "main": "fme-guidance-image.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/FullMeasureEducation/fme-guidance-image.git",
   "authors": [
     "fme-samuelbirk <sam@fullmeasureed.com>"
@@ -9,10 +9,8 @@
   "description": "A simple angular directive for displaying thumbnail images and lightboxes",
   "keywords": [
     "guidance-image",
-    "list",
-    "drag",
-    "and",
-    "drop",
+    "image",
+    "display",
     "html5",
     "angularjs"
   ],
