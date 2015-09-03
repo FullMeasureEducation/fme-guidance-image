@@ -12,5 +12,6 @@ angular.module('fme-guidance-image', [])
       scope.displayModal = () ->
         angular.element('#guidance-image-modal').find('#full-size-image').attr('src', scope.large_image)
         angular.element('#guidance-image-modal').modal('show')
+        return
 
 
